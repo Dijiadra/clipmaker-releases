@@ -1,0 +1,86 @@
+<!doctype html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>ClipMaker — Politique de confidentialité</title>
+<style>
+  :root { color-scheme: dark; }
+  body {
+    margin: 0; background: #0d1117; color: #e6edf3;
+    font-family: -apple-system, "Segoe UI", Roboto, sans-serif;
+    max-width: 760px; margin: 0 auto; padding: 48px 20px 60px; line-height: 1.6;
+  }
+  h1 { color: #00d9ff; font-size: 28px; }
+  h2 { color: #00d9ff; font-size: 19px; margin-top: 36px; }
+  p, li { color: #c4ccd4; font-size: 15px; }
+  a { color: #00d9ff; }
+  .updated { color: #6b7784; font-size: 13px; margin-bottom: 32px; }
+  code { background: #161b22; padding: 1px 6px; border-radius: 4px; }
+</style>
+</head>
+<body>
+  <h1>Politique de confidentialité — ClipMaker</h1>
+  <p class="updated">Dernière mise à jour : 31 août 2026</p>
+
+  <p>
+    ClipMaker est une application de bureau (Windows) qui transforme des vidéos longues en clips
+    courts pour les réseaux sociaux. Cette page explique quelles données sont traitées, où elles
+    vont, et ce qui reste sur ton ordinateur.
+  </p>
+
+  <h2>1. Traitement vidéo — 100% local</h2>
+  <p>
+    Le téléchargement de la vidéo source, la transcription audio, le découpage, l'incrustation des
+    sous-titres et toutes les fonctions d'édition (vitesse, filtres, zoom, miroir, filigrane, audio)
+    s'exécutent entièrement sur ton ordinateur. Aucun fichier vidéo n'est envoyé à un serveur
+    ClipMaker — il n'en existe pas.
+  </p>
+
+  <h2>2. Détection des moments forts — API Gemini (Google)</h2>
+  <p>
+    Pour repérer automatiquement les meilleurs passages, ClipMaker envoie le <strong>texte</strong>
+    de la transcription (jamais le fichier vidéo) à l'API Gemini de Google, en utilisant la clé API
+    que tu renseignes toi-même dans les paramètres de l'application. Ce traitement est soumis à la
+    politique de confidentialité de Google. ClipMaker ne conserve aucune copie de ce texte après
+    l'analyse.
+  </p>
+
+  <h2>3. Licence et activation — hors ligne</h2>
+  <p>
+    L'activation premium repose sur une clé de licence signée cryptographiquement (Ed25519),
+    vérifiée localement sur ton appareil. Aucune connexion réseau n'est nécessaire ni effectuée
+    pour valider une licence.
+  </p>
+
+  <h2>4. Vérification de mise à jour</h2>
+  <p>
+    Au démarrage, l'application interroge l'API publique de GitHub pour connaître la dernière
+    version disponible (aucune donnée personnelle transmise, seule la version actuelle est
+    comparée).
+  </p>
+
+  <h2>5. Publication sur TikTok (fonctionnalité optionnelle)</h2>
+  <p>
+    Si tu connectes ton compte TikTok, ClipMaker utilise l'API officielle TikTok (Content Posting
+    API) pour publier, à ta demande explicite, un clip généré localement vers ton propre compte
+    TikTok. La connexion se fait via le processus d'autorisation officiel de TikTok (OAuth) :
+    ClipMaker ne voit jamais ton mot de passe TikTok. Le jeton d'accès obtenu est stocké
+    uniquement sur ton appareil et sert exclusivement à publier les vidéos que tu choisis
+    d'envoyer. Aucune donnée de ton compte TikTok n'est transmise à un tiers ni stockée par nous.
+  </p>
+
+  <h2>6. Achat premium — Telegram</h2>
+  <p>
+    L'achat d'une licence premium se fait via un bot Telegram indépendant. Les informations
+    échangées (preuve de paiement, identifiant Telegram) servent uniquement à générer et
+    transmettre ta clé de licence.
+  </p>
+
+  <h2>7. Contact</h2>
+  <p>
+    Pour toute question concernant cette politique : <a href="mailto:adrasecond0@gmail.com">adrasecond0@gmail.com</a>
+    ou via <a href="https://t.me/ClipsMaker_bot">le bot Telegram de support</a>.
+  </p>
+</body>
+</html>
